@@ -1,0 +1,17 @@
+<h1 style="text-align:center;">Progress Spinner</h1>
+
+<!-- 
+    2 components 
+        mat-progress-spinner
+        mat-spinner
+ -->
+
+<div>
+    <div class="mat-headline">mat-progress-spinner</div>
+    <mat-progress-spinner value="40"></mat-progress-spinner>
+    <br>
+
+    <div class="mat-headline">mat-spinner</div>
+    <button mat-raised-button color="warn" (click)="loadData()">Open Spinner</button>
+    <mat-spinner *ngIf="showSpinner"></mat-spinner>
+</div>
