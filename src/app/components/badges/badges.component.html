@@ -1,0 +1,45 @@
+<h1 style="text-align:center;">Badges</h1>
+<div>
+
+    <div>
+        <span [matBadge]="notifications" [matBadgeHidden]="notifications === 0" >Notification</span>
+    </div>
+    <!--  
+        [matBadge]="notifications" binding badge with property 
+        [matBadgeHidden]="notifications === 0" badge hidden if notifications is 0
+    -->
+
+    <div>
+        <span matBadge="5" >matBadge="5"</span>
+    </div>
+    <div>
+        <span matBadge="5" matBadgePosition="below before">matBadgePosition="below before"</span>
+    </div>
+    <div>
+        <span matBadge="5" matBadgePosition="below after">below after</span>
+    </div>
+    <div>
+        <span matBadge="5" matBadgePosition="above before">above before</span>
+    </div>
+
+    <div>
+        <span matBadge="5" matBadgeSize="small">matBadgeSize="small"</span>
+    </div>
+    <div>
+        <span matBadge="5" matBadgeSize="medium">medium</span>
+    </div>
+    <div>
+        <span matBadge="5" matBadgeSize="large">large</span>
+    </div>
+
+
+    <div>
+        <span matBadge="5" matBadgeColor="primary">matBadgeColor="primary"</span>
+    </div>
+    <div>
+        <span matBadge="5" matBadgeColor="accent">accent</span>
+    </div>
+    <div>
+        <span matBadge="5" matBadgeColor="warn" matBadgeOverlap="false">warn, matBadgeOverlap="false"</span>
+    </div>
+</div>
