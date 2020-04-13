@@ -1,0 +1,24 @@
+<h1 style="text-align:center;">Button Toggle</h1>
+<div>
+    <mat-button-toggle #toggleBtn checked disableRipple>Toggle</mat-button-toggle>
+    {{ toggleBtn.checked }}
+    <!-- 
+        checked is to make it true by default 
+        disableRipple to dissable ripple effect 
+        disable is used to disable the button
+    -->
+  </div>
+  <br>
+  <div>
+    <div class="mat-headline">mat-button-toggle-group</div>
+    <mat-button-toggle-group multiple #toggleGroup="matButtonToggleGroup">
+        <mat-button-toggle value="angular">Angular</mat-button-toggle>
+        <mat-button-toggle value="react">React</mat-button-toggle>
+        <mat-button-toggle value="vue">Vue</mat-button-toggle>
+        <!-- 
+            multiple will allow to accet more than one input in button-toggle-group
+         -->
+    </mat-button-toggle-group>
+    {{toggleGroup.value}}
+</div>
+  
