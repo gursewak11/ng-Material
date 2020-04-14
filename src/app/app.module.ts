@@ -13,6 +13,7 @@ import { ProgressSpinnerComponent } from './components/progress-spinner/progress
 import { NavbarComponent } from './components/navigation/navbar/navbar.component';
 import { SideNavComponent } from './components/navigation/side-nav/side-nav.component';
 import { FormsModule } from '@angular/forms';
+import { MenuComponent } from './components/navigation/menu/menu.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { FormsModule } from '@angular/forms';
     BadgesComponent,
     ProgressSpinnerComponent,
     NavbarComponent,
-    SideNavComponent
+    SideNavComponent,
+    MenuComponent
   ],
   imports: [
     BrowserModule,
