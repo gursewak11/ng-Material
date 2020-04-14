@@ -1,0 +1,54 @@
+<h1 style="text-align:center;">Side Nav</h1>
+
+<div class="mat-headline">mat-sidenav-container</div>
+<mat-sidenav-container>
+
+    <mat-sidenav mode="side" [(opened)]="opened1">
+        <div class="mat-title">Sidenav</div>
+        mat-sidenav
+    </mat-sidenav>
+
+    <mat-sidenav-content>
+        <div class="mat-title">Main</div>
+        <button mat-raised-button (click)="opened1=!opened1">Toggle Sidenav</button>
+        <br><br>mat-sidenav-content
+    </mat-sidenav-content>
+
+</mat-sidenav-container>
+
+<!-- 
+    for modes there are 3 possible modes
+    over, comes over the main body
+    push, pushes the main body
+    side, change the shape of main body
+
+    above using bannana binging for  [(opened)]="opened1 to toggle the sidenav
+ -->
+
+<!-- 
+    by invoking open and close methods on side nav 
+    # make a template reference variable
+-->
+ <mat-sidenav-container>
+
+    <mat-sidenav #sidenav mode="side" 
+    (opened)="log('Opened')" (closed)="log('Closed')" >
+        <div class="mat-title">Sidenav</div><br>
+        #sidenav, generating template reference variable for opening and closing sidenav
+    </mat-sidenav>
+
+    <mat-sidenav-content>
+        <div class="mat-title">Main</div><br>
+        <button mat-raised-button (click)="sidenav.open()">open</button>
+        <button mat-raised-button (click)="sidenav.close()">close</button>
+        <button mat-raised-button (click)="sidenav.toggle()">Toggle</button>
+        <br><br>sidenav.open(), this property is used onClick open<br>
+        sidenav.close(), this property is used onClick close<br>
+        sidenav.toggle(), this property is used onClick toggle<br>
+    </mat-sidenav-content>
+    
+</mat-sidenav-container>
+<!-- 
+    (opened)="log('Opened')",   one way binding to move data frim template to ts
+ -->
+
