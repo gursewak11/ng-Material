@@ -1,1 +1,17 @@
 <h1 style="text-align:center;">Menu</h1>
+<div>
+    <mat-menu #appMenu="matMenu" xPosition="before" yPosition="above">
+        <button mat-menu-item [matMenuTriggerFor]="subMenu" >FrontEnd</button>
+        <button mat-menu-item>BackEnd</button>
+    </mat-menu>
+    <button class="center" mat-raised-button [matMenuTriggerFor]="appMenu">Menu</button>
+
+
+    <mat-menu #subMenu="matMenu">
+        <button mat-menu-item>Angular</button>
+        <button mat-menu-item>React</button>
+        <button mat-menu-item>Vue</button>
+    </mat-menu>
+
+
+</div>
