@@ -9,6 +9,7 @@ import { ProgressSpinnerComponent } from './components/progress-spinner/progress
 import { NavbarComponent } from './components/navigation/navbar/navbar.component';
 import { SideNavComponent } from './components/navigation/side-nav/side-nav.component';
 import { MenuComponent } from './components/navigation/menu/menu.component';
+import { ListComponent } from './components/layout/list/list.component';
 
 const routes: Routes = [
   {path: 'typography', component: TypographyComponent},
@@ -19,7 +20,9 @@ const routes: Routes = [
   {path: 'progress-spinner', component: ProgressSpinnerComponent},
   {path: 'navigation/navbar', component: NavbarComponent},
   {path: 'navigation/sidenav', component: SideNavComponent},
-  {path: 'navigation/menu', component: MenuComponent}
+  {path: 'navigation/menu', component: MenuComponent},
+  {path: 'layout/list', component: ListComponent},
+
 ];
 
 @NgModule({
