@@ -1,11 +1,11 @@
 <h1 style="text-align:center;">Menu</h1>
 <div>
+    <div class="mat-headline"></div>
     <mat-menu #appMenu="matMenu" xPosition="before" yPosition="above">
         <button mat-menu-item [matMenuTriggerFor]="subMenu" >FrontEnd</button>
         <button mat-menu-item>BackEnd</button>
     </mat-menu>
     <button class="center" mat-raised-button [matMenuTriggerFor]="appMenu">Menu</button>
-
 
     <mat-menu #subMenu="matMenu">
         <button mat-menu-item>Angular</button>
@@ -13,5 +13,48 @@
         <button mat-menu-item>Vue</button>
     </mat-menu>
 
+<!-- 
+     #appMenu="matMenu",    setting a template var (appMenu), ro matMenu type
+     [matMenuTriggerFor]="appMenu",
+        here we are assigning templater value to a button to open menu
 
-</div>
+    subMenu, is menu in menu
+ -->
+<!-- 
+    before, after   xPosition, used to set where the menu should open
+    above, below    yPosition, used to set where the menu should open
+ -->
+
+
+<!--    
+    lazy rendering 
+    this helps to get dynamic choices in menu choises
+-->
+    <mat-menu #lazyMenu="matMenu">
+        <ng-template matMenuContent let-name="name" let-hobby="hobby">
+            <button mat-menu-item>Settings</button>
+            <button mat-menu-item>This is hobby {{ hobby }}</button>
+            <button mat-menu-item>Log Out {{ name }}</button>
+        </ng-template> 
+    </mat-menu>
+<!-- 
+    let-name="name", here we are defing(let-name) name var for ng-template
+    "name", is data which we get form [matMenuTriggerData] object as below
+    [matMenuTriggerData], is used for dynamic lists along with ng-template
+ -->
+    <button 
+    mat-raised-button 
+    [matMenuTriggerData]="{name: 'Gursewak', hobby: 'Dael Pana'}" 
+    [matMenuTriggerFor]="lazyMenu">
+        Gursewak
+    </button>
+    <button 
+    mat-raised-button 
+    [matMenuTriggerData]="{name: 'Dael', hobby: 'Bhot zada dael pana'}" 
+    [matMenuTriggerFor]="lazyMenu">
+        Dael
+    </button>
+
+
+</div>      
+
