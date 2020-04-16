@@ -8,6 +8,9 @@ import { Component, OnInit } from '@angular/core';
 export class TabsComponent implements OnInit {
 
   constructor() { }
+  tabChange(index){
+    console.log(index)
+  }
 
   ngOnInit(): void {
   }
