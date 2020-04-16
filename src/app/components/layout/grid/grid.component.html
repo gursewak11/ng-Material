@@ -1,1 +1,20 @@
 <h1 style="text-align:center;">Grid</h1>
+<div>
+    <div class="mat-headline">mat-grid-list</div>
+    <div class="mat-subheading-1">cols="2", for number of rows, auto select rows</div>
+    <div class="mat-subheading-1">rowHeight="100px", for height of each row</div>
+    <div class="mat-subheading-1">gutterSize="20px", for spaing between the tiles</div>
+    <mat-grid-list cols="2" rowHeight="100px" gutterSize="10px">
+        2:1 mean row is half the column width
+        we can use "fit" too but for that we need to define container height
+        <mat-grid-tile>mat-grid-tile</mat-grid-tile>
+        <mat-grid-tile rowspan="2">rowspan="2", to specify number of rows for respected tile</mat-grid-tile>
+        <mat-grid-tile>Tile</mat-grid-tile>
+        <mat-grid-tile colspan="2">colspan="2", to specify number of columns for respected tile</mat-grid-tile>
+    </mat-grid-list>
+</div>
+<!-- 
+    rowHeight="100px", we can replace 100px, by rem, % or below more below
+    2:1 mean row is half the column width
+    we can use "fit" too but for that we need to define container height
+ -->
