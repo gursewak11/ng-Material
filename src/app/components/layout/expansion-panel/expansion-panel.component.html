@@ -1,4 +1,52 @@
 <h1 style="text-align:center;">Expansion Panel</h1>
 <div>
-    
+    <div class="mat-headline">mat-accordion</div>
+    <div class="mat-headline">mat-expansion-panel</div>
+
+    <mat-accordion multi="true" hideToggle>
+        <!-- 
+            mat-accordion, used to combine more than one expansion panel,
+            hideToggle, hides toggle button,
+            multi="true", allow multiple scrrens to be open in one set of panels
+         -->
+        <mat-expansion-panel expanded="false">
+            <!-- 
+                expanded="true", expanded is to make pannel opne or close, 
+                    by setting it to true it os open in forst positon
+             -->
+            <mat-expansion-panel-header>
+                <mat-panel-title>
+                    mat-panel-title
+                </mat-panel-title>
+                <mat-panel-description>
+                    mat-panel-description
+                </mat-panel-description>
+            </mat-expansion-panel-header>
+
+            <p>Content Of pannel</p>
+            <mat-action-row>
+                <button mat-raised-button>mat-action-row</button>
+            </mat-action-row>
+        </mat-expansion-panel>
+
+
+        <mat-expansion-panel>
+            <mat-expansion-panel-header>
+                <mat-panel-title>
+                    Dael 2
+                </mat-panel-title>
+                <mat-panel-description>
+                    Bhot Zada Dael 2
+                </mat-panel-description>
+            </mat-expansion-panel-header>
+            <p>This is dael content 2</p>
+            <mat-action-row>
+                <button mat-raised-button>Button Dael 2</button>
+            </mat-action-row>
+        </mat-expansion-panel>
+    </mat-accordion>
 </div>
+
+<!-- {{panelOpenState ? 'open' : 'closed'}} -->
+
+
