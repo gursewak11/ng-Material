@@ -13,6 +13,7 @@ import { ListComponent } from './components/layout/list/list.component';
 import { GridComponent } from './components/layout/grid/grid.component';
 import { ExpansionPanelComponent } from './components/layout/expansion-panel/expansion-panel.component';
 import { CardsComponent } from './components/layout/cards/cards.component';
+import { TabsComponent } from './components/layout/tabs/tabs.component';
 
 const routes: Routes = [
   {path: 'typography', component: TypographyComponent},
@@ -28,6 +29,7 @@ const routes: Routes = [
   {path: 'layout/grid', component: GridComponent},
   {path: 'layout/expanel', component: ExpansionPanelComponent},
   {path: 'layout/cards', component: CardsComponent},
+  {path: 'layout/tabs', component: TabsComponent},
 
   {path: '**', component: ListComponent}
 
