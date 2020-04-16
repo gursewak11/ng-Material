@@ -12,6 +12,7 @@ import { MenuComponent } from './components/navigation/menu/menu.component';
 import { ListComponent } from './components/layout/list/list.component';
 import { GridComponent } from './components/layout/grid/grid.component';
 import { ExpansionPanelComponent } from './components/layout/expansion-panel/expansion-panel.component';
+import { CardsComponent } from './components/layout/cards/cards.component';
 
 const routes: Routes = [
   {path: 'typography', component: TypographyComponent},
@@ -26,6 +27,8 @@ const routes: Routes = [
   {path: 'layout/list', component: ListComponent},
   {path: 'layout/grid', component: GridComponent},
   {path: 'layout/expanel', component: ExpansionPanelComponent},
+  {path: 'layout/cards', component: CardsComponent},
+
   {path: '**', component: ListComponent}
 
 ];
