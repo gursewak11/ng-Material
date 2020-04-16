@@ -11,6 +11,7 @@ import { SideNavComponent } from './components/navigation/side-nav/side-nav.comp
 import { MenuComponent } from './components/navigation/menu/menu.component';
 import { ListComponent } from './components/layout/list/list.component';
 import { GridComponent } from './components/layout/grid/grid.component';
+import { ExpansionPanelComponent } from './components/layout/expansion-panel/expansion-panel.component';
 
 const routes: Routes = [
   {path: 'typography', component: TypographyComponent},
@@ -24,7 +25,8 @@ const routes: Routes = [
   {path: 'navigation/menu', component: MenuComponent},
   {path: 'layout/list', component: ListComponent},
   {path: 'layout/grid', component: GridComponent},
-  {path: '**', component: ListComponent},
+  {path: 'layout/expanel', component: ExpansionPanelComponent},
+  {path: '**', component: ListComponent}
 
 ];
 
