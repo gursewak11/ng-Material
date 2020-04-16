@@ -18,6 +18,7 @@ import { ListComponent } from './components/layout/list/list.component';
 import { GridComponent } from './components/layout/grid/grid.component';
 import { ExpansionPanelComponent } from './components/layout/expansion-panel/expansion-panel.component';
 import { CardsComponent } from './components/layout/cards/cards.component';
+import { TabsComponent } from './components/layout/tabs/tabs.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { CardsComponent } from './components/layout/cards/cards.component';
     ListComponent,
     GridComponent,
     ExpansionPanelComponent,
-    CardsComponent
+    CardsComponent,
+    TabsComponent
   ],
   imports: [
     BrowserModule,
