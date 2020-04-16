@@ -10,6 +10,7 @@ import { NavbarComponent } from './components/navigation/navbar/navbar.component
 import { SideNavComponent } from './components/navigation/side-nav/side-nav.component';
 import { MenuComponent } from './components/navigation/menu/menu.component';
 import { ListComponent } from './components/layout/list/list.component';
+import { GridComponent } from './components/layout/grid/grid.component';
 
 const routes: Routes = [
   {path: 'typography', component: TypographyComponent},
@@ -22,6 +23,8 @@ const routes: Routes = [
   {path: 'navigation/sidenav', component: SideNavComponent},
   {path: 'navigation/menu', component: MenuComponent},
   {path: 'layout/list', component: ListComponent},
+  {path: 'layout/grid', component: GridComponent},
+  {path: '**', component: ListComponent},
 
 ];
 

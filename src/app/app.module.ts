@@ -15,6 +15,7 @@ import { SideNavComponent } from './components/navigation/side-nav/side-nav.comp
 import { FormsModule } from '@angular/forms';
 import { MenuComponent } from './components/navigation/menu/menu.component';
 import { ListComponent } from './components/layout/list/list.component';
+import { GridComponent } from './components/layout/grid/grid.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { ListComponent } from './components/layout/list/list.component';
     NavbarComponent,
     SideNavComponent,
     MenuComponent,
-    ListComponent
+    ListComponent,
+    GridComponent
   ],
   imports: [
     BrowserModule,
