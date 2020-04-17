@@ -36,17 +36,16 @@ import { TabsComponent } from './components/layout/tabs/tabs.component';
     GridComponent,
     ExpansionPanelComponent,
     CardsComponent,
-    TabsComponent
+    TabsComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule, 
+    BrowserAnimationsModule,
     MaterialModule,
-    FormsModule
-    
+    FormsModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

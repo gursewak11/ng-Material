@@ -1,9 +1,9 @@
-<h1 style="text-align:center;">Cards</h1>
+<h1 style="text-align: center;">Cards</h1>
 <div>
-    <mat-tab-group #tabRef (selectedTabChange)="tabChange(tabRef.selectedIndex)">
-        <mat-tab label="Angular">Angular Content</mat-tab>
-        <mat-tab label="React">React Content</mat-tab>
-        <mat-tab label="Vue">Vue Content</mat-tab>
-    </mat-tab-group>
-    {{ tabRef.selectedIndex }}
+  <mat-tab-group #tabRef (selectedTabChange)="tabChange(tabRef.selectedIndex)">
+    <mat-tab label="Angular">Angular Content</mat-tab>
+    <mat-tab label="React">React Content</mat-tab>
+    <mat-tab label="Vue">Vue Content</mat-tab>
+  </mat-tab-group>
+  {{ tabRef.selectedIndex }}
 </div>

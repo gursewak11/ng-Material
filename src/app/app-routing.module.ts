@@ -1,6 +1,6 @@
 import { NgModule, Component } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { TypographyComponent } from './components/typography/typography.component'; 
+import { TypographyComponent } from './components/typography/typography.component';
 import { ButtonComponent } from './components/button/button.component';
 import { ButtonToggleComponent } from './components/button-toggle/button-toggle.component';
 import { IconComponent } from './components/icon/icon.component';
@@ -16,27 +16,26 @@ import { CardsComponent } from './components/layout/cards/cards.component';
 import { TabsComponent } from './components/layout/tabs/tabs.component';
 
 const routes: Routes = [
-  {path: 'typography', component: TypographyComponent},
-  {path: 'button', component: ButtonComponent},
-  {path: 'buttontoggle', component: ButtonToggleComponent},
-  {path: 'icon', component: IconComponent},
-  {path: 'badges', component: BadgesComponent},
-  {path: 'progress-spinner', component: ProgressSpinnerComponent},
-  {path: 'navigation/navbar', component: NavbarComponent},
-  {path: 'navigation/sidenav', component: SideNavComponent},
-  {path: 'navigation/menu', component: MenuComponent},
-  {path: 'layout/list', component: ListComponent},
-  {path: 'layout/grid', component: GridComponent},
-  {path: 'layout/expanel', component: ExpansionPanelComponent},
-  {path: 'layout/cards', component: CardsComponent},
-  {path: 'layout/tabs', component: TabsComponent},
+  { path: 'typography', component: TypographyComponent },
+  { path: 'button', component: ButtonComponent },
+  { path: 'buttontoggle', component: ButtonToggleComponent },
+  { path: 'icon', component: IconComponent },
+  { path: 'badges', component: BadgesComponent },
+  { path: 'progress-spinner', component: ProgressSpinnerComponent },
+  { path: 'navigation/navbar', component: NavbarComponent },
+  { path: 'navigation/sidenav', component: SideNavComponent },
+  { path: 'navigation/menu', component: MenuComponent },
+  { path: 'layout/list', component: ListComponent },
+  { path: 'layout/grid', component: GridComponent },
+  { path: 'layout/expanel', component: ExpansionPanelComponent },
+  { path: 'layout/cards', component: CardsComponent },
+  { path: 'layout/tabs', component: TabsComponent },
 
-  {path: '**', component: ListComponent}
-
+  { path: '**', component: ListComponent },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
