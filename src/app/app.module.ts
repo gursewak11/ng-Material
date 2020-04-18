@@ -20,6 +20,7 @@ import { ExpansionPanelComponent } from './components/layout/expansion-panel/exp
 import { CardsComponent } from './components/layout/cards/cards.component';
 import { TabsComponent } from './components/layout/tabs/tabs.component';
 import { StepperComponent } from './components/layout/stepper/stepper.component';
+import { InputComponent } from './components/forms/input/input.component';
 
 @NgModule({
   declarations: [
@@ -39,6 +40,7 @@ import { StepperComponent } from './components/layout/stepper/stepper.component'
     CardsComponent,
     TabsComponent,
     StepperComponent,
+    InputComponent,
   ],
   imports: [
     BrowserModule,
