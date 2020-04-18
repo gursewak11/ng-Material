@@ -21,6 +21,7 @@ import { CardsComponent } from './components/layout/cards/cards.component';
 import { TabsComponent } from './components/layout/tabs/tabs.component';
 import { StepperComponent } from './components/layout/stepper/stepper.component';
 import { InputComponent } from './components/forms/input/input.component';
+import { SelectComponent } from './components/forms/select/select.component';
 
 @NgModule({
   declarations: [
@@ -41,6 +42,7 @@ import { InputComponent } from './components/forms/input/input.component';
     TabsComponent,
     StepperComponent,
     InputComponent,
+    SelectComponent,
   ],
   imports: [
     BrowserModule,
