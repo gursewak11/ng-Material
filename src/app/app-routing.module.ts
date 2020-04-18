@@ -17,6 +17,7 @@ import { TabsComponent } from './components/layout/tabs/tabs.component';
 import { StepperComponent } from './components/layout/stepper/stepper.component';
 import { InputComponent } from './components/forms/input/input.component';
 import { SelectComponent } from './components/forms/select/select.component';
+import { AutoCompleteComponent } from './components/forms/auto-complete/auto-complete.component';
 
 const routes: Routes = [
   { path: 'typography', component: TypographyComponent },
@@ -36,6 +37,7 @@ const routes: Routes = [
   { path: 'layout/stepper', component: StepperComponent },
   { path: 'forms/input', component: InputComponent },
   { path: 'forms/select', component: SelectComponent },
+  { path: 'forms/autocomplete', component: AutoCompleteComponent },
 
   { path: '**', component: ListComponent },
 ];
