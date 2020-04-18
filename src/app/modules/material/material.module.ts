@@ -14,6 +14,7 @@ import { MatExpansionModule } from '@angular/material/expansion';
 import { MatCardModule } from '@angular/material/card';
 import { MatTabsModule } from '@angular/material/tabs';
 import { MatStepperModule } from '@angular/material/stepper';
+import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 
 const material = [
@@ -29,10 +30,11 @@ const material = [
   MatDividerModule,
   MatGridListModule,
   MatExpansionModule,
-  MatInputModule,
   MatCardModule,
   MatTabsModule,
   MatStepperModule,
+  MatFormFieldModule,
+  MatInputModule,
 ];
 
 @NgModule({
