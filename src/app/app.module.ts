@@ -23,6 +23,7 @@ import { StepperComponent } from './components/layout/stepper/stepper.component'
 import { InputComponent } from './components/forms/input/input.component';
 import { SelectComponent } from './components/forms/select/select.component';
 import { AutoCompleteComponent } from './components/forms/auto-complete/auto-complete.component';
+import { RadioButtonComponent } from './components/forms/radio-button/radio-button.component';
 
 @NgModule({
   declarations: [
@@ -45,6 +46,7 @@ import { AutoCompleteComponent } from './components/forms/auto-complete/auto-com
     InputComponent,
     SelectComponent,
     AutoCompleteComponent,
+    RadioButtonComponent,
   ],
   imports: [
     BrowserModule,
