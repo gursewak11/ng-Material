@@ -19,6 +19,7 @@ import { InputComponent } from './components/forms/input/input.component';
 import { SelectComponent } from './components/forms/select/select.component';
 import { AutoCompleteComponent } from './components/forms/auto-complete/auto-complete.component';
 import { RadioButtonComponent } from './components/forms/radio-button/radio-button.component';
+import { DatePickerComponent } from './components/forms/date-picker/date-picker.component';
 
 const routes: Routes = [
   { path: 'typography', component: TypographyComponent },
@@ -40,6 +41,7 @@ const routes: Routes = [
   { path: 'forms/select', component: SelectComponent },
   { path: 'forms/autocomplete', component: AutoCompleteComponent },
   { path: 'forms/radiobutton', component: RadioButtonComponent },
+  { path: 'forms/datepicker', component: DatePickerComponent },
 
   { path: '**', component: ListComponent },
 ];
