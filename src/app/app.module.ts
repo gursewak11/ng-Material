@@ -12,7 +12,7 @@ import { BadgesComponent } from './components/badges/badges.component';
 import { ProgressSpinnerComponent } from './components/progress-spinner/progress-spinner.component';
 import { NavbarComponent } from './components/navigation/navbar/navbar.component';
 import { SideNavComponent } from './components/navigation/side-nav/side-nav.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MenuComponent } from './components/navigation/menu/menu.component';
 import { ListComponent } from './components/layout/list/list.component';
 import { GridComponent } from './components/layout/grid/grid.component';
@@ -52,6 +52,7 @@ import { AutoCompleteComponent } from './components/forms/auto-complete/auto-com
     BrowserAnimationsModule,
     MaterialModule,
     FormsModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

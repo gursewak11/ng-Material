@@ -9,13 +9,33 @@
       </mat-option>
     </mat-autocomplete>
   </mat-form-field>
+
   <br />
+
   <mat-form-field>
     <input type="text" matInput [matAutocomplete]="auto" />
-
     <mat-autocomplete #auto="matAutocomplete" [displayWith]="displayFun">
       <mat-option *ngFor="let option of objectOptions" [value]="option">
         {{ option.name }}
+      </mat-option>
+    </mat-autocomplete>
+  </mat-form-field>
+
+  <br />
+
+  <mat-form-field>
+    <input
+      type="text"
+      matInput
+      [matAutocomplete]="link"
+      [formControl]="myControl"
+    />
+    <mat-autocomplete #link="matAutocomplete" [displayWith]="displayFun">
+      <mat-option
+        *ngFor="let option of filteredOptions | async"
+        [value]="option"
+      >
+        {{ option }}
       </mat-option>
     </mat-autocomplete>
   </mat-form-field>
