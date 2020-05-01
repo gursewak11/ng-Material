@@ -21,6 +21,7 @@ import { AutoCompleteComponent } from './components/forms/auto-complete/auto-com
 import { RadioButtonComponent } from './components/forms/radio-button/radio-button.component';
 import { DatePickerComponent } from './components/forms/date-picker/date-picker.component';
 import { ToolTipComponent } from './components/popupModels/tool-tip/tool-tip.component';
+import { SnackbarComponent } from './components/popupModels/snackbar/snackbar.component';
 
 const routes: Routes = [
   { path: 'typography', component: TypographyComponent },
@@ -44,6 +45,7 @@ const routes: Routes = [
   { path: 'forms/radiobutton', component: RadioButtonComponent },
   { path: 'forms/datepicker', component: DatePickerComponent },
   { path: 'popup/tooltip', component: ToolTipComponent },
+  { path: 'popup/sncakbar', component: SnackbarComponent },
 
   { path: '**', component: ListComponent },
 ];
