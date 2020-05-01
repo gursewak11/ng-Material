@@ -1,11 +1,20 @@
 <h1 style="text-align: center;">Date Picker</h1>
 <div>
   <mat-form-field>
-    <input type="text" matInput [matDatepicker]="myDatepicker" />
+    <input
+      type="text"
+      matInput
+      [matDatepicker]="myDatepicker"
+      [matDatepickerFilter]="dateFilter"
+    />
+    <!--   
+      [min]="minDate"
+      [max]="maxDate" -->
     <mat-datepicker-toggle
       [for]="myDatepicker"
       matSuffix
     ></mat-datepicker-toggle>
-    <mat-datepicker #myDatepicker></mat-datepicker>
+    <mat-datepicker #myDatepicker startView="multi-year"></mat-datepicker>
+    <!-- startView="year" -->
   </mat-form-field>
 </div>

@@ -25,6 +25,7 @@ import { SelectComponent } from './components/forms/select/select.component';
 import { AutoCompleteComponent } from './components/forms/auto-complete/auto-complete.component';
 import { RadioButtonComponent } from './components/forms/radio-button/radio-button.component';
 import { DatePickerComponent } from './components/forms/date-picker/date-picker.component';
+import { ToolTipComponent } from './components/popupModels/tool-tip/tool-tip.component';
 
 @NgModule({
   declarations: [
@@ -49,6 +50,7 @@ import { DatePickerComponent } from './components/forms/date-picker/date-picker.
     AutoCompleteComponent,
     RadioButtonComponent,
     DatePickerComponent,
+    ToolTipComponent,
   ],
   imports: [
     BrowserModule,
